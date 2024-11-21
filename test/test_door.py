@@ -1,5 +1,5 @@
 import unittest
-from src.door import Door
+from door import Door
 
 class TestDoor(unittest.TestCase):
     def test_initial_state(self):
@@ -10,3 +10,6 @@ class TestDoor(unittest.TestCase):
         door = Door()
         door.lock()
         self.assertTrue(door.locked)
+        
+if __name__ == '__main__':
+    unittest.main()
