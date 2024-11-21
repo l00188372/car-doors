@@ -10,3 +10,6 @@ class TestDoor(unittest.TestCase):
         door = Door()
         door.lock()
         self.assertTrue(door.locked)
+        
+if __name__ == '__main__':
+    unittest.main()
